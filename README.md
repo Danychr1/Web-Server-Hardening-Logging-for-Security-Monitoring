@@ -16,7 +16,7 @@ Secure a Linux-based Apache (or Nginx) web server using hardening techniques and
 * Install Apache2 using the APT package manager
 * Start and enable the Apache service
 * Verify the Apache default page at `http://localhost`
-* Manage Apache using (`systemctl`)commands 
+* Manage Apache using (`systemctl`)commands
 * Check network configuration with `ip a`
 
 ## 🚀 Quick Start
