@@ -1,5 +1,16 @@
-# 🌐 Linux Apache Web Server Setup
-A hands-on lab for installing and configuring Apache web server on Debian-based Linux distributions (Ubuntu, Kali, Debian).
+# 🌐 Web Server Hardening & Logging for Security Monitoring
+
+## 🔐 Objective
+Secure a Linux-based Apache (or Nginx) web server using hardening techniques and implement logging/monitoring to detect suspicious activity.
+
+## 🛠️ Security Controls Implemented
+- Disabled unused services and default modules
+- Configured firewall rules (UFW/firewalld) to restrict access
+- Enforced TLS/HTTPS and disabled insecure protocols
+- Applied file and directory permission hardening
+- Implemented logging with syslog and auditd
+- Monitored logs for intrusion indicators (failed login attempts, suspicious traffic)
+
 
 ## 📦 What You'll Learn
 * Install Apache2 using the APT package manager
@@ -49,14 +60,16 @@ sudo systemctl stop apache2
 sudo systemctl restart apache2
 ```
 
-## 🛠 Tools Used
-- apache2
-- bash
-- apt
-- systemctl
-- ip
+## 🧰 Tools & Technologies
+- Linux (Ubuntu/CentOS)
+- Apache/Nginx
+- UFW / firewalld
+- Auditd / Syslog
+- SSH Hardening (Fail2Ban optional)
 
-## ✅ Ideal For
-* Linux beginners
-* IT support or Sys-Admin labs
-* Local hosting and web service practice  
+## 🚨 SOC/Blue Team Relevance
+This project demonstrates:
+- Server security configuration
+- Log-based threat detection
+- Attack surface reduction
+- Incident monitoring foundations
